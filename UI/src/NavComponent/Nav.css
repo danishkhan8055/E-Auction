@@ -1,0 +1,26 @@
+/* Add smooth transitions for hover effects */
+.nav-item {
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Ensure dropdown menus are properly styled */
+  .dropdown-menu {
+    background-color: #343a40; /* Dark background for dropdown */
+  }
+  
+  .dropdown-item {
+    color: #fff !important; /* White text for dropdown items */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #495057; /* Hover effect for dropdown items */
+  }
+  
+  /* Style the logout/login button */
+  .nav-link.bg-primary {
+    border-radius: 5px;
+  }

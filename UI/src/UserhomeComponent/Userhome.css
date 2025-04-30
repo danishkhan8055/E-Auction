@@ -1,0 +1,61 @@
+.userhome-container {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  }
+  
+  .hero-section {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .hero-description {
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .cta-buttons .btn {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .feature-box {
+    width: 250px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .feature-box i {
+    font-size: 2.5rem;
+    color: #0d6efd;
+    margin-bottom: 10px;
+  }
+  
+  .feature-box h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-10px);
+  }
+  

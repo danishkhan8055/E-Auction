@@ -1,0 +1,61 @@
+/* Fade-in animation for text */
+.text-container {
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  /* Custom Button Styles */
+  .btn-custom {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(255, 65, 108, 0.4);
+  }
+  
+  .btn-custom:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    box-shadow: 0 8px 20px rgba(255, 65, 108, 0.6);
+  }
+  
+  /* Carousel Image Animation */
+  .carousel-item img {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Keyframe Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  }
+  
+  .btn-custom {
+    transition: transform 0.3s ease;
+  }
+  
+  .btn-custom:hover {
+    transform: scale(1.1);
+  }
