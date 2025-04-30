@@ -2,6 +2,7 @@ import "./Register.css";
 import { useState } from "react";
 import axios from "axios";
 import { _apiurluser } from "../apiURLs";
+import { ToastContainer, toast} from "react-toastify"
 
 function Register() {
   const [output, setOutput] = useState("");
@@ -51,6 +52,7 @@ function Register() {
     axios
       .post(_apiurluser + "save", userDetails)
       .then((response) => {
+        toast.success("Registration Successful🎉🎉")
         setOutput(response.data.result);
         setName("");
         setEmail("");
@@ -61,11 +63,16 @@ function Register() {
         setGender("");
         setErrors({});
       })
-      .catch((err) => console.log(err));
+      .catch((error)=>{
+        console.log(error);
+        toast.error("Something missing")
+        
+      })
   };
 
   return (
     <div className="register-container">
+      <ToastContainer autoClose={2000}/>
       <h1 className="display-5 text-uppercase mb-4 text-center">
         Register <span className="text-primary">Here!!!</span>
       </h1>

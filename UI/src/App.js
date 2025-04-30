@@ -26,6 +26,8 @@ import Verifyuser from './VerifyuserComponent/Verifyuser';
 import ViewProduct from './ViewProductComponent/ViewProduct';
 import BidProduct from './BidProductComponent/BidProduct';
 import ShowBid from './ShowBidComponent/ShowBid';
+import Blog from './Blog Component/Blog';
+import Portfolio from './Portfolio Component/Portfolio';
 
 function App() {
   return (
@@ -42,6 +44,8 @@ function App() {
     <Route path="/about" element={<About />} ></Route>
     <Route path="/contact" element={<Contact />} ></Route>
     <Route path="/service" element={<Service />} ></Route>
+    <Route path="/blog" element={<Blog />} ></Route>
+    <Route path="/portfolio" element={<Portfolio />} ></Route>
     <Route path="/register" element={<Register />} ></Route>
     <Route path="/verifyuser/:vemail" element={<Verifyuser />} ></Route>
     <Route path="/login" element={<Login />} ></Route>

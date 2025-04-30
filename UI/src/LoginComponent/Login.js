@@ -42,31 +42,40 @@ function Login() {
   }
 
   return (
-    <div>
-    {/* About Start */}
-    <div class="container-fluid py-6 px-5">
-        <div class="row g-5">
-            <div class="col-lg-12">
-<h1 class="display-5 text-uppercase mb-4">Login <span class="text-primary">Here!!!</span></h1>
-<font style={{"color":"blue"}}>{output}</font>
-<form>
-    <div class="form-group">
-      <label for="email">Email address:</label>
-      <input type="email" class="form-control" value={email} onChange={e => setEmail(e.target.value)} />
+    <div className="login-container">
+  <h1 className="display-5 text-uppercase mb-4">
+    Login <span className="text-primary">Here!!!</span>
+  </h1>
+
+  {output && <p style={{ color: "blue", textAlign: "center" }}>{output}</p>}
+
+  <form>
+    <div className="form-group">
+      <label htmlFor="email">Email address:</label>
+      <input
+        type="email"
+        className="form-control"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
     </div>
-    <br/>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" value={password} onChange={e => setPassword(e.target.value)} />
+    <br />
+    <div className="form-group">
+      <label htmlFor="pwd">Password:</label>
+      <input
+        type="password"
+        className="form-control"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
     </div>
-    <br/>
-    <button type="button" onClick={handleSubmit} class="btn btn-success">Login</button>
-</form>  
-            </div>
-        </div>
-    </div>
-    {/* About End */}    
-    </div>
+    <br />
+    <button type="button" onClick={handleSubmit} className="btn btn-success">
+      Login
+    </button>
+  </form>
+</div>
+
   );
 }
 

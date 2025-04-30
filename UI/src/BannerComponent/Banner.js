@@ -1,10 +1,13 @@
 import "./Banner.css";
 import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 function Banner() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [showBanner, setShowBanner] = useState(false);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const role = localStorage.getItem("role");
@@ -18,7 +21,7 @@ function Banner() {
       iconClass: "fa fa-home fa-4x text-primary mb-4 d-none d-sm-block",
       title: "Bid Your Dream Product",
       btnText: "Get A Quote",
-      btnLink: "#"
+      btnLink: "/blog"
     },
     {
       id: 2,
@@ -26,7 +29,7 @@ function Banner() {
       iconClass: "fa fa-tools fa-4x text-primary mb-4 d-none d-sm-block",
       title: "We Are Trusted For Your Auction",
       btnText: "Contact Us",
-      btnLink: "#"
+      btnLink: "/contact"
     },
     {
       id: 3,
@@ -34,7 +37,7 @@ function Banner() {
       iconClass: "fa fa-gavel fa-4x text-primary mb-4 d-none d-sm-block",
       title: "Best Deals on Auctions",
       btnText: "Explore Now",
-      btnLink: "#"
+      btnLink: "/portfolio"
     },
     {
       id: 4,
@@ -42,7 +45,7 @@ function Banner() {
       iconClass: "fa fa-star fa-4x text-primary mb-4 d-none d-sm-block",
       title: "Your Trust, Our Commitment",
       btnText: "Learn More",
-      btnLink: "#"
+      btnLink: "/about"
     }
   ], []);
 
@@ -101,14 +104,14 @@ function Banner() {
                     >
                       {item.title}
                     </motion.h1>
-                    <motion.a 
-                      href={item.btnLink} 
+                    <motion.button 
+                      onClick={()=>navigate(item.btnLink)} 
                       className="btn-custom"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                     >
                       {item.btnText}
-                    </motion.a>
+                    </motion.button>
                   </motion.div>
                 </div>
               </motion.div>

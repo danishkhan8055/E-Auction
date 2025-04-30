@@ -45,6 +45,9 @@
   .btn-success:hover {
     background: #218838;
   }
+  .error{
+    color: red;
+  }
   
   /* Responsive Adjustments */
   @media (max-width: 768px) {
