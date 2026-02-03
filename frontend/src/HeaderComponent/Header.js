@@ -90,7 +90,7 @@ function Header() {
                   <i className="bi bi-geo-alt fs-1 text-primary me-3"></i>
                   <div className="text-start">
                     <h6 className="text-uppercase fw-bold">Our Office</h6>
-                    <span>X Street, Indore, India</span>
+                    <span> Indore, India</span>
                   </div>
                 </div>
               </motion.div>
@@ -102,7 +102,7 @@ function Header() {
                   <i className="bi bi-envelope-open fs-1 text-primary me-3"></i>
                   <div className="text-start">
                     <h6 className="text-uppercase fw-bold">Email Us</h6>
-                    <span>info@example.com</span>
+                    <span>princedany8055@gmail.com</span>
                   </div>
                 </div>
               </motion.div>
